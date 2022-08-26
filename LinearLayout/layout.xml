@@ -1,97 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:orientation="vertical" >
-    
-    
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calculator"
+        android:text="FORM"
         android:gravity="center" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
 
-        <EditText
-            android:id="@+id/n1"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Name"
             android:gravity="center"
-            android:layout_weight="1"
-            android:hint="num1"
-            />
-
+            android:layout_weight="1"/>
         <EditText
-            android:id="@+id/n2"
+            android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Enter Name"
             android:gravity="center"
-            android:layout_weight="1"
-            android:hint="num2"
-            />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-        <Button
-            android:id="@+id/abtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="+" />
-        <Space
-            android:layout_width="5dp"
-            android:layout_height="5dp"
             android:layout_weight="1" />
-
-
-        <Button
-            android:id="@+id/sbtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="-" />
-        <Space
-            android:layout_width="5dp"
-            android:layout_height="5dp"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/mbtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="x" />
-
-
-
-        <Button
-            android:id="@+id/dbtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="/" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >/
-
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/res"
+            android:text="age"
+            android:gravity="center"
             android:layout_weight="1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/age"
+            android:hint="Enter age"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="age"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/place"
+            android:hint="Enter place"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone"
+            android:hint="Enter phone number"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            />
+
+    </LinearLayout>
+
 </LinearLayout>
+
