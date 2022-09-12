@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout
+<GridLayout xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:columnCount="4" >
+    android:orientation="vertical">
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnCount="4" >
         <EditText
-
+            android:id="@+id/res"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_columnSpan="4"
-            android:hint="vbdvbd" />
-
+            android:text="" />
     </GridLayout>
 
     <Space
@@ -32,16 +30,21 @@
         >
         <Button
             android:text="1"
-            android:id="@+id/bu1" />
+            android:id="@+id/bu1"
+            android:onClick="numberEvent"/>
         <Button
             android:text="2"
-            android:id="@+id/bu2" />
+            android:id="@+id/bu2"
+            android:onClick="numberEvent" />
         <Button
             android:text="3"
-            android:id="@+id/bu3" />
+            android:id="@+id/bu3"
+            android:onClick="numberEvent"/>
         <Button
             android:text="+"
-            android:id="@+id/bu_add" />
+            android:id="@+id/bu_add"
+            android:onClick="operatorEvent"
+            />
     </GridLayout>
 
     <GridLayout
@@ -52,16 +55,20 @@
         >
         <Button
             android:text="4"
-            android:id="@+id/bu4" />
+            android:id="@+id/bu4"
+            android:onClick="numberEvent"/>
         <Button
             android:text="5"
-            android:id="@+id/bu5" />
+            android:id="@+id/bu5"
+            android:onClick="numberEvent"/>
         <Button
             android:text="6"
-            android:id="@+id/bu6" />
+            android:id="@+id/bu6"
+            android:onClick="numberEvent" />
         <Button
             android:text="-"
-            android:id="@+id/bu_sub" />
+            android:id="@+id/bu_sub"
+            android:onClick="operatorEvent"/>
     </GridLayout>
 
     <GridLayout
@@ -72,36 +79,43 @@
         >
         <Button
             android:text="7"
-            android:id="@+id/bu7" />
+            android:id="@+id/bu7"
+            android:onClick="numberEvent"/>
         <Button
             android:text="8"
-            android:id="@+id/bu8" />
+            android:id="@+id/bu8"
+            android:onClick="numberEvent"/>
         <Button
             android:text="9"
-            android:id="@+id/bu9" />
+            android:id="@+id/bu9"
+            android:onClick="numberEvent"/>
         <Button
             android:text="*"
-            android:id="@+id/bu_mul"/>
+            android:id="@+id/bu_mul"
+            android:onClick="operatorEvent" />
     </GridLayout>
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnCount="4"
-
         >
         <Button
             android:text="0"
-            android:id="@+id/bu0" />
+            android:id="@+id/bu0"
+            android:onClick="numberEvent" />
         <Button
             android:text="/"
-            android:id="@+id/bu_div" />
+            android:id="@+id/bu_div"
+            android:onClick="operatorEvent" />
         <Button
             android:text="="
-            android:id="@+id/bu_eq" />
+            android:id="@+id/bu_eq"
+            android:onClick="equalEvent" />
         <Button
             android:text="clr"
-            android:id="@+id/bu_clr" />
+            android:id="@+id/bu_clr"
+            android:onClick="numberEvent" />
     </GridLayout>
 
 </GridLayout>
